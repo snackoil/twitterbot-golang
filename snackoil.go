@@ -1,5 +1,9 @@
 package main
-
+/*
+This bot is using Dalton Hubble's go-twitter library.
+it's a Go client library for the Twitter API.
+https://github.com/dghubble/go-twitter <- Check it out, he has cool stuff! :)
+*/
 import (
 	"fmt"
 	"os"
@@ -9,6 +13,7 @@ import (
 	"github.com/dghubble/oauth1"
 )
 
+// Get credentials via env vars.
 var (
 	ConsumerKey       = os.Getenv("CONSUMER_KEY")
 	ConsumerKeySecret = os.Getenv("CONSUMER_SECRET")
