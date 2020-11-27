@@ -36,7 +36,7 @@ func retweet(){
 
 	// Search the last 20 #snackoil to retweet
 	searchParams := &twitter.SearchTweetParams{
-		Query: "%23" + "#snackoil",
+		Query: "%23" + "snackoil",
 		Count: 20,
 	}
 	searchResult, _, _ := client.Search.Tweets(searchParams)
